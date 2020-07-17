@@ -12,7 +12,7 @@ const Soma = props => {
       <div>
         <span>
           <strong>Resultado:</strong>
-          <strong>{min + max}</strong>
+          <strong>{max + min}</strong>
         </span>
 
       </div>
