@@ -7,10 +7,10 @@ const reducers = combineReducers({
       max: 10
     }
   }  
-})
+});
 
 function storeConfig() {
   return createStore(reducers)
-}
+};
 
 export default storeConfig
