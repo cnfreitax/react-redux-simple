@@ -1,30 +1,10 @@
 import {createStore, combineReducers} from 'redux';
 
+import numberState from './reducers/numbersReducers'
+
 const reducers = combineReducers({
-  numbers: function(state, action) {
-
-    switch(action.type) {
-      case 'MIN_NUMBER_ALTERED':
-        return {
-          ...state, 
-          min: action.payload
-        };
-
-      case 'MAX_NUMBER_ALTERED':
-        return {
-          ...state, 
-          max: action.payload
-        };
-
-      default:
-        return {
-          min: 5,
-          max: 10
-        }
-      }
-    }  
-  }
-);
+  numbers: numberState,
+});
 
 function storeConfig() {
   return createStore(reducers)
